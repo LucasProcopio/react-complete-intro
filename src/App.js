@@ -36,7 +36,7 @@ function createList(lista) {
   return listArray;
 }
 
-// TODO component
+// tarefas component
 
 const todoContainder = function(props) {
   return React.createElement("div", { className: "container" }, [
