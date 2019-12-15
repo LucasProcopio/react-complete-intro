@@ -40,7 +40,7 @@ function createList(lista) {
 
 const todoContainder = function(props) {
   return React.createElement("div", { className: "container" }, [
-    React.createElement("h1", { className: "header" }, "Lista de tarefas"),
+    React.createElement("h1", { className: "header" }, props.title),
     React.createElement(
       "div",
       { className: "list-container" },
@@ -56,7 +56,7 @@ const todoContainder = function(props) {
 // APP Component
 
 const App = function(props) {
-  return React.createElement(todoContainder);
+  return React.createElement(todoContainder, { title: "Lista de tarefas 2" });
 };
 
 ReactDOM.render(React.createElement(App), document.getElementById("root"));
